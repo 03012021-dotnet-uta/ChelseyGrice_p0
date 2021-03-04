@@ -12,7 +12,8 @@ namespace PizzaBox.Domain.Singletons
     {
       Stores = new List<AStore>
       {
-        new FreddyPizza() { Name = "freddy pizza"}
+        new ChicagoStore(),
+        new NewYorkStore()
       };
     }
   }
