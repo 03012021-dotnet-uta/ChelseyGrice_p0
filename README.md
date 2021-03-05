@@ -10,6 +10,7 @@ PizzaBox is a console-based pizza ordering application.
     + [folder] Abstracts
     + [folder] Interfaces
     + [folder] Models
+    + [folder] Singletons
   + [project - classlib ] PizzaBox.Storing.csproj
     + [folder] Repositories
   + [project - xunit] PizzaBox.Testing.csproj
@@ -59,27 +60,33 @@ The application is centered around the interaction of 4 main objects:
 
 ## timelines
 
-+ due on Mar-15 at 11p Central
-+ present on Mar-17 starting at 9.30a Central
-+ implement as many requirements as you can (don't push to get all done)
-+ should be an mvp status (able to order at least 1 pizza)
+- due on Mar-15 at 11p Central
+- present on Mar-17 starting at 9.30a Central
+- try ot implement as many requirements as you can (don't push to get all done)
+- should be an mvp status
+  - able to at least place an order with 1 pizza
+  - able to at least have validation unit tests for Customer, Order, Pizza, Store
+  - able to save a placed order including customer info, pizza info, store info
 
 ## as a customer
 
-+ should be able to launch application
-+ should be able to view all stores
-+ should be able to select a store
-+ should be to place an order
-+ with either custom or preset pizzas
-+ if custom
-+ select crust, size and toppings
-+ if preset
-+ select pizza and its size
-+ see a tally of my order
-+ add or remove more pizzas
-+ and checkout when complete with latest order
-+ see my order history
-+ make a new order
+- should be able to launch application
+- should be able to view all stores
+- should be able to select a store
+- should be to place an order
+- should be able to choose either custom or preset pizzas
+
+  for a custom pizza
+  - should be able to choose crust, size and toppings
+
+  for a preset pizza
+  - should be able to choose pizza and size
+
+- should be able to view a preview of the order in progress
+- should be able to modify the order in progress (add/remove pizza)
+- should be able to place/checkout the order in progress
+- should be able to view order history
+- should be able to make new order
 
 ## store story
 
