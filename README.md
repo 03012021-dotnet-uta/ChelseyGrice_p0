@@ -60,12 +60,12 @@ The application is centered around the interaction of 4 main objects:
 
 ## timelines
 
-- due on Mar-15 at 11p Central
+- (DELETE)due on Mar-15 at 11p Central
 - present on Mar-17 starting at 9.30a Central
-- try ot implement as many requirements as you can (don't push to get all done)
-- should be an mvp status
+- try to implement as many requirements as you can (don't push to get all done)
+- should be an mvp (minimum viable product) status
   - able to at least place an order with 1 pizza
-  - able to at least have validation unit tests for Customer, Order, Pizza, Store
+  - able to at least have 10 total validation unit tests for Customer, Order, Pizza, Store
   - able to save a placed order including customer info, pizza info, store info
 
 ## as a customer
@@ -74,7 +74,7 @@ The application is centered around the interaction of 4 main objects:
 - should be able to view all stores
 - should be able to select a store
 - should be to place an order
-- should be able to choose either custom or preset pizzas
+- should be able to choose either custom or pre-set pizzas
 
   for a custom pizza
   - should be able to choose crust, size and toppings
@@ -96,7 +96,8 @@ as a store, i should be able do this:
 + select options for order history, sales
 + if order history
 + select options for all store orders and orders associated to a user (filtering)
-+ if sales
+
+if sales
 + see pizza type, count, revenue by week or by month
 
 > the goal is to try to complete as many reqs as you can in the time alloted. :)
