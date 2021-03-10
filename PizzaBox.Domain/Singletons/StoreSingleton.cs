@@ -14,7 +14,8 @@ namespace PizzaBox.Domain.Singletons
   public class StoreSingleton
   {
     private static StoreSingleton _storeSingleton;
-    public List<ChicagoStore> Stores { get; set; } // print job
+    public List<AStore> Stores { get; set; } // print job
+
     public static StoreSingleton Instance
     {
       get
@@ -33,12 +34,26 @@ namespace PizzaBox.Domain.Singletons
     /// </summary>
     private StoreSingleton()
     {
+      // var fs = new FileStorage();
+
+      // if (Stores == null)
+      // {
+      //   Stores = fs.ReadFromXml<AStore>().ToList();
+      // }
+    }
+
+    public void Seeding()
+    {
+      var stores = new List<AStore>
+      {
+        new ChicagoStore(),
+        new NewYorkStore()
+      };
+
       var fs = new FileStorage();
 
-      if (Stores == null)
-      {
-        Stores = fs.ReadFromXml<ChicagoStore>().ToList();
-      }
+      fs.WriteToXml<AStore>(stores);
+      Stores = fs.ReadFromXml<AStore>().ToList();
     }
 
     /* SINGLETON METHOD WORKFLOW */
