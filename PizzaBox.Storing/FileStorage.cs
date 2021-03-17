@@ -4,10 +4,11 @@ using System.Xml.Serialization;
 
 namespace PizzaBox.Storing
 {
+
+  // Write to XML and Read from xml methods created in FileStorage
   public class FileStorage
   {
-    //private readonly string _path = @"store.xml";
-    //private readonly string _path = @"crusts.xml";
+
 
     public void WriteToXml<T>(List<T> data, string test) where T : class
     {

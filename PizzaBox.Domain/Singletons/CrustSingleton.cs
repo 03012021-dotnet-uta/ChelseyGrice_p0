@@ -9,14 +9,14 @@ using PizzaBox.Storing;
 namespace PizzaBox.Domain.Singletons
 {
   /// <summary>
-  /// 
+  /// create crust singleton instance and read from crust.xml
   /// </summary>
   public class CrustSingleton
   {
     private static CrustSingleton _crustSingleton;
     public List<Crust> Crusts { get; set; } // print job
-    private readonly string _path = @"crust.xml";
-    public static CrustSingleton Instance
+    private readonly string _path = @"crust.xml";// read from crust.xml
+    public static CrustSingleton Instance 
     {
       get
       {
@@ -29,9 +29,6 @@ namespace PizzaBox.Domain.Singletons
       }
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
     private CrustSingleton()  //reading from xml
     {
       var fs = new FileStorage();

@@ -68,5 +68,20 @@ namespace PizzaBox.Testing.Tests
       // assert
       Assert.Equal(expected, actual);
     }
+    [Fact]
+    public void Test_CheesePizza_Fact()
+    {
+      // arrange
+      var sut = new CheesePizza(){
+          Name = "Cheese Pizza"
+      };
+      var expected = "Cheese Pizza";
+
+      // act
+      var actual = sut.Name;
+
+      // assert
+      Assert.Equal(expected, actual);
+    }
   }
 }

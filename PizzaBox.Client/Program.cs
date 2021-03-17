@@ -1,4 +1,4 @@
-﻿//thank you to Catherine Saagar and Anis for all your help and patience
+﻿//thank you to Catherine Sagar and Anis for all your help and patience with writting this
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ namespace PizzaBox.Client
     {
         /// <param name="args"></param>
 
-        List<APizza> pizzas = PizzaSingleton.Instance.Pizzas;
+        List<APizza> pizzas = PizzaSingleton.Instance.Pizzas; // assigning new list variable Pizzas from pizza Singleton
 
         List<Crust> crusts = CrustSingleton.Instance.Crusts;
 
@@ -24,7 +24,7 @@ namespace PizzaBox.Client
         static void Main(string[] args)
         {
             System.Console.WriteLine();
-            System.Console.WriteLine("   PizzaBox  "); //title
+            System.Console.WriteLine("   wellcome to Juju pizza  "); //title
             Console.WriteLine();
 
             
