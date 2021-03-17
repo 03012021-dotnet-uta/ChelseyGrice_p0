@@ -4,6 +4,6 @@
     <Name>Chicago Store</Name>
   </AStore>
   <AStore xsi:type="NewYorkStore">
-    <Name>NewYork Store</Name>
+    <Name>New York Store</Name>
   </AStore>
 </ArrayOfAStore>

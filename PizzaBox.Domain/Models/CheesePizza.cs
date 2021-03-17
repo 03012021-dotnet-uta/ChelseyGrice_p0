@@ -4,9 +4,9 @@ using PizzaBox.Domain.Abstracts;
 namespace PizzaBox.Domain.Models
 {
   /// <summary>
-  /// 
+  /// Pizza model with AddCrust AddSize and AddToppings
   /// </summary>
-  public class MeatPizza : APizza
+  public class CheesePizza : APizza
   {
     protected override void AddCrust()
     {
@@ -22,9 +22,13 @@ namespace PizzaBox.Domain.Models
     {
       Toppings = new List<Topping>
       {
-        new Topping(),
-        new Topping()
+          
       };
     }
+
+            public CheesePizza()
+        {
+            Name = "Cheese Pizza";
+        }
   }
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTopping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Topping>
+    <Name>Pepperoni</Name>
+    <Price>1</Price>
+  </Topping>
+  <Topping>
+    <Name>Olives</Name>
+    <Price>1</Price>
+  </Topping>
+  <Topping>
+    <Name>Spinach</Name>
+    <Price>1</Price>
+  </Topping>
+  <Topping>
+    <Name>Mushrooms</Name>
+    <Price>1</Price>
+  </Topping>
+  <Topping>
+    <Name>Onions</Name>
+    <Price>1</Price>
+  </Topping>
+</ArrayOfTopping>

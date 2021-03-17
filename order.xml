@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Order xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Pizzas>
+    <APizza xsi:type="CustomPizza">
+      <Crust>
+        <Name>Thin</Name>
+        <Price>0.3</Price>
+      </Crust>
+      <Size>
+        <Name>Large</Name>
+        <Price>15</Price>
+      </Size>
+      <Toppings>
+        <Topping>
+          <Name>Mushrooms</Name>
+          <Price>0</Price>
+        </Topping>
+        <Topping>
+          <Name />
+          <Price>0</Price>
+        </Topping>
+        <Topping>
+          <Name />
+          <Price>0</Price>
+        </Topping>
+        <Topping>
+          <Name />
+          <Price>0</Price>
+        </Topping>
+      </Toppings>
+      <Name>Custom Pizza</Name>
+    </APizza>
+  </Pizzas>
+  <StoreName>Chicago Store</StoreName>
+  <customerEmail>chelseybee19@gmail.com</customerEmail>
+</Order>

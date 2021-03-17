@@ -20,11 +20,29 @@ namespace PizzaBox.Domain.Models
 
     protected override void AddToppings()
     {
-      Toppings = new List<Topping>
-      {
-        new Topping(),
-        new Topping()
+      Toppings = new List<Topping>{
+            new Topping{
+                Name = "Onion",
+                Price = 1
+            },
+            new Topping{
+                Name = "Spinach",
+                Price = 1
+            },
+            new Topping{
+                Name = "Olives",
+                Price = 1
+            },
+            new Topping{
+                Name = "Mushrooms",
+                Price = 1
+            }
       };
     }
+
+            public VeggiePizza()
+        {
+            Name = "Veggie Pizza";
+        }
   }
 }

@@ -6,7 +6,7 @@ namespace PizzaBox.Domain.Models
     /// <summary>
     /// 
     /// </summary>
-    public class CustomPizza : APizza
+    public class PepperoniPizza : APizza
     {
         protected override void AddCrust()
         {
@@ -20,18 +20,17 @@ namespace PizzaBox.Domain.Models
 
         protected override void AddToppings()
         {
-            Toppings = new List<Topping>
-            {
-                new Topping(),
-                new Topping(),
-                new Topping(),
-                new Topping()
+            Toppings = new List<Topping>();
+            var top = new Topping{
+                Name = "Pepperoni",
+                Price = 1
             };
-        }
-        public CustomPizza()
-        {
-            Name = "Custom Pizza";
+            Toppings.Add(top);
         }
 
+        public PepperoniPizza()
+        {
+            Name = "Pepperoni Pizza";
+        }
     }
 }

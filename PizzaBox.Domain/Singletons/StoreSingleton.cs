@@ -8,13 +8,16 @@ using PizzaBox.Storing;
 
 namespace PizzaBox.Domain.Singletons
 {
-  /// <summary>
-  /// 
-  /// </summary>
   public class StoreSingleton
   {
     private static StoreSingleton _storeSingleton;
-    public List<AStore> Stores { get; set; } // print job
+    public List<AStore> Stores { get; set; } = new List<AStore>(){
+      new ChicagoStore(),
+      new NewYorkStore()
+  
+    };
+
+    private readonly string _path = @"store.xml";
 
     public static StoreSingleton Instance
     {
@@ -29,18 +32,6 @@ namespace PizzaBox.Domain.Singletons
       }
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
-    private StoreSingleton()
-    {
-      // var fs = new FileStorage();
-
-      // if (Stores == null)
-      // {
-      //   Stores = fs.ReadFromXml<AStore>().ToList();
-      // }
-    }
 
     public void Seeding()
     {
@@ -52,8 +43,8 @@ namespace PizzaBox.Domain.Singletons
 
       var fs = new FileStorage();
 
-      fs.WriteToXml<AStore>(stores);
-      Stores = fs.ReadFromXml<AStore>().ToList();
+      fs.WriteToXml<AStore>(stores, _path);
+      Stores = fs.ReadFromXml<AStore>(_path).ToList();
     }
 
     /* SINGLETON METHOD WORKFLOW */
